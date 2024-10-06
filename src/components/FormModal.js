@@ -13,7 +13,7 @@ import apiService from '../app/apiService';
 import Joi from 'joi';
 import moment from 'moment';
 
-const initial_form = { make: '', model: '', year: '', transmission_type: '', price: 0, vehicle_size: '', vehicle_style: '', year: '' };
+const initial_form = { make: '', model: '', year: '', transmission_type: '', price: 0, vehicle_size: '', vehicle_style: '' };
 
 export default function FormModal({ open, handleClose, mode, selectedCar, modalKey, refreshData }) {
 	const [form, setForm] = useState(initial_form);
